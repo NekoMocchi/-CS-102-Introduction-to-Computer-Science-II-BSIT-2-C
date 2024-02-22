@@ -1,0 +1,93 @@
+---
+title: "CS 102 LAB 1"
+author: "Anjelo Marco Cabaña"
+date: "2024-02-08"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(rvest)
+library(httr)
+library(dplyr)
+library(polite)
+library(stringr)
+
+
+
+url <- "https://www.amazon.com/s?k=earphones&s=review-rank&ds=v1%3AGkkLlkM6hjl8Hto0N75n8ImJV%2FkF8y7Y1nh2T5lt7mI&crid=24V0FPV04CES0&qid=1708560920&sprefix=earphones%2Caps%2C626&ref=sr_st_review-rank" <- 100 + counter
+
+webpage <- read_html(url)
+
+url + loopurl
+
+session <-bow(url, user_agent = "Educational")
+session
+
+# Define a function to extract the title, price, rating and reviews count of the products
+
+# Scrape the title of the products
+
+title_html <- html_nodes(webpage, span)
+productName = $("#productName")
+pr
+
+
+title_html <- "<span id="productTitle" class="a-size-large product-title-word-break">"
+
+
+
+
+
+# Product reviews
+
+
+product_review <- read_html(url)
+
+product_review <- "#customer_review-R11KMXLIV7614Z.a-section.celwidget"
+product_review <- "#customer_review-R3J3MM07HDQ00M.a-section celwidget"
+product_review <- "#customer_review-R1ENZC62ZI83XB.Zl83XB.a-section-celwidget"
+product_review <- "#customer_review-R1TAGBD5LB05M5.a-section.celdwidget"
+product_review <- "#customer_review-R3NYFN04IIBN4K.a-section.celwidget"
+product_review <- "#customer_review-RJC63ZYFA3VCL.a-section.celwidget"
+product_review <- "#customer_review-R3PRYAWX2M3ADU.a-section.celwidget"
+product_review <- "#customer_review-R2OJ14CKNKFUO2.a-section.celwidget"
+product_review <- "#customer_review-R12VUHZYDOY2ID.a-section.celwidget"
+product_review <- "#customer_review-R1BMPEC88O22S8.a-section.celwidget"
+product_review <- "#customer_review-R1YDDZYR3CNU14.a-section.celwidget"
+product_review <- "#customer_review-R6Z0Z3LVXE5NI.a-section.celwidget"
+product_review <- "#customer_review-R6Q67MHZB1TAR.a-section.celwidget"
+product_review <- "#customer_review-RQ63OSE5BF0BR.a-section.celwidget"
+product_review <- "#customer_review-R3MT5AZU767UCG.a-section.celwidget"
+product_review <- "#customer_review-RN9WD5A9MGY9F.a-section.celwidget"
+product_review <- "#customer_review-R2JZ03QZG0V550.a-section.celwidget"
+product_review <- "#customer_review-R36C7Q326GMCUK.a-section.celwidget"
+product_review <- "#customer_review-R25MSNI6JOYESZ.a-section.celwidget"
+product_review <- "#customer_review-R1MJOQCE2YYH81.a-section.celwidget"
+product_review <- ""
+
+
+
+
+
+
+
+
+
+# Define the URL for the Amazon products
+
+
+
+url <- "https://www.amazon.com/Bluetooth-Headphones-Earphones-Waterproof-Microphone/dp/B0CT8KVYZ3/ref=sr_1_1?crid=24V0FPV04CES0&dib=eyJ2IjoiMSJ9.etaNkJ8Il1sba8f1IPeEYVY8qIhiFAKWBGEJH18Ro9xBPaNxVmeHhe6izdLR4AUR1-xcyHq9N7Slkqr_Y2WEWoV1gKsjafCUJiAzBZCTWni068xTFqspcq4omVWK-opuxxJfM_flp2CwBydxytumfrvqA_JC-Ku5Hp83qfzYZGUSTFspq4eaA1Spq0HPnTujIOyhR9iRf5G5E70z4RowZqEjxYhXxkYtQ5qjKNwQOJY.MiuFBBPmUiMJTpzgljBaqjhegzx6Zee0ddlaSJRh5QY&dib_tag=se&keywords=earphones&qid=1708561457&sprefix=earphones%2Caps%2C626&sr=8-1&th=1"
+
+
+
+
+
+
+
+```
