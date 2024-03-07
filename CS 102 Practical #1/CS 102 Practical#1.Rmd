@@ -1,0 +1,89 @@
+---
+title: "CS 102 Practical#1"
+author: "Anjelo Marco Cabaña"
+date: "2024-03-07"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+library(tidyverse)
+
+#A)
+#1
+data(warpbreaks)
+str(warpbreaks)
+sapply(warpbreaks, class)
+
+# The data types of each columns is breaks is numeric, while both wool and tension are factor.
+
+```
+
+
+```{r}
+#2 We can see that the breaks column is numeric while the wool and tension are factors. The number of observations is indicated by the number of rows 54 in this dataset. The str()function is not a single command, but it is one of the most accurate way to get the information you need.
+
+data(warpbreaks)
+nrow(warpbreaks)
+
+```
+
+
+```{r}
+#3 Yes, numeric is a natural data type for the columns that are stored. However if necessary, you can convert them to into integer using the as.integer() function.
+
+str(warpbreaks)
+sapply(warpbreaks, class)
+data(warpbreaks)
+warpbreaks$breaks <- as.integer(warpbreaks$breaks)
+class(warpbreaks$breaks)
+
+```
+
+
+```{r}
+#4 To avoid errors it is important to ensure that the variables you are working with has the correct data types. You can use functions like class() and str() to inspect the data types and structures of R objects.
+
+```
+
+
+```{r}
+#B)
+#1
+data <- readLines("exampleFile.txt")
+print(data)
+
+```
+
+
+```{r}
+#2
+lines <- readLines("exampleFile.txt")
+comment_lines <- grepl("^\\/{3}", lines)
+comments <- lines[comment_lines]
+data <- lines[!comment_lines]
+print(comments)
+print(data)
+
+```
+
+
+```{r}
+#3
+lines <- readLines("exampleFile.txt")
+comment_lines <- grepl("^\\/{3}", lines)
+comments <- lines[comment_lines]
+data <- lines[!comment_lines]
+date_pattern <- "Created: ([0-9]+ [A-Za-z]+ [0-9]+)"
+date_match <- regexpr(date_pattern, comments[1])
+date_text <- regmatches(comments[1], date_match)
+date_text <- gsub("Created: ", "", date_text)
+cat("It was created on", date_text, "\n")
+
+```
+
+
